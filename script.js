@@ -1,4 +1,3 @@
-// Portfolio Modal Functionality
 const modal = document.getElementById("imageModal")
 const modalImg = document.getElementById("expandedImage")
 const portfolioItems = document.querySelectorAll(".portfolio-item")
@@ -9,7 +8,7 @@ const nextBtn = document.querySelector(".modal-next")
 let currentImageIndex = 0
 const images = Array.from(portfolioItems).map((item) => item.querySelector("img"))
 
-// Quando clica na foto do portfolio faz abrir
+// Funcionalidade - Quando clica na foto do portfolio faz abrir
 portfolioItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     currentImageIndex = index
@@ -37,7 +36,7 @@ function updateModalImage()
   modalImg.alt = img.alt
 }
 
-// Fecha portfolio
+// Funcionalidade - Fecha portfolio
 closeBtn.addEventListener("click", closeModal)
 
 modal.addEventListener("click", (e) => {
@@ -46,7 +45,7 @@ modal.addEventListener("click", (e) => {
   }
 })
 
-// Navigation
+// Funcionalidade - Navegação
 prevBtn.addEventListener("click", (e) => {
   e.stopPropagation()
   currentImageIndex = (currentImageIndex - 1 + images.length) % images.length
@@ -59,7 +58,7 @@ nextBtn.addEventListener("click", (e) => {
   updateModalImage()
 })
 
-// Seta funciona no portfolio
+// Funcionalidade - Setas do modal
 document.addEventListener("keydown", (e) => {
   if (!modal.classList.contains("active")) return
 
@@ -74,7 +73,7 @@ document.addEventListener("keydown", (e) => {
   }
 })
 
-// Scrollada suave quando clica no tópico do header
+// Scroll suave quando clica no tópico do header
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()

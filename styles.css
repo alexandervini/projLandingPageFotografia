@@ -155,45 +155,6 @@ body
   align-items: center;
 }
 
-.inicio-btn 
-{
-  padding: 1rem 2.5rem;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  border: 2px solid transparent;
-}
-
-.inicio-btn:first-child 
-{
-  background-color: rgba(255, 255, 255, 0.95);
-  color: #1c1917;
-  border-color: rgba(255, 255, 255, 0.95);
-}
-
-.inicio-btn:first-child:hover 
-{
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
-
-.inicio-btn-outline 
-{
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.95);
-  border-color: rgba(255, 255, 255, 0.8);
-}
-
-.inicio-btn-outline:hover 
-{
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 1);
-  color: rgba(255, 255, 255, 1);  
-}
-
 .portfolio 
 {
   padding: 8rem 0;
@@ -440,7 +401,6 @@ body
 
 .footer 
 {
-  /*background: linear-gradient(135deg, #1c1917 0%, #292524 100%);*/
   background: #1c1917;
   color: #fafaf9;
   padding: 5rem 0 2rem;
@@ -455,7 +415,7 @@ body
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(250, 250, 249, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(245, 245, 10, 0.2), transparent);
 }
 
 .footer-cta 
@@ -514,8 +474,6 @@ body
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-
-
 /*
 .footer-bottom 
 {
@@ -527,7 +485,6 @@ body
 }
 */
   
-/* MOBILE */
 @media (max-width: 768px) 
 {
   .logo 
@@ -551,7 +508,6 @@ body
     background-attachment: scroll;
   }
 
-  /* Responsividade para o texto do inicio */
   .inicio-titulo 
   {
     font-size: 2rem;
@@ -561,18 +517,6 @@ body
   {
     font-size: 1rem;
     margin-bottom: 2rem;
-  }
-
-  .inicio-buttons 
-  {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .inicio-btn 
-  {
-    width: 100%;
-    max-width: 280px;
   }
 
   .portfolio-grid 
@@ -602,8 +546,7 @@ body
     gap: 1rem;
   }
 
-  /* Divisores sem parallax no mobile */
-  .section-divider 
+  .section-divisao 
   {
     height: 30vh;
     background-attachment: scroll;
