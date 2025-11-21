@@ -11,9 +11,11 @@
     <header class="header">
         <div class="container">
             <div class="header-corpo">
-                <h1 class="logo">Nome Sobrenome Fotografia</h1>
+                <img src="images/logo-header.png" alt="" class="logo-header">
+                <!-- <h1 class="logo">RAFAEL OLIVEIRA</h1> -->
                 <nav class="nav">
-                    <!-- <a href="#inicio" class="nav-link">Inicio</a> -->
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#sobre-mim" class="nav-link">Sobre mim</a>
                     <a href="#portfolio" class="nav-link">Portfólio</a>
                     <a href="#servicos" class="nav-link">Serviços</a>
                     <a href="#contato" class="nav-link">Contato</a>
@@ -24,9 +26,23 @@
 
     <section id="home" class="inicio">
         <div class="inicio-corpo">
-            <h2 class="inicio-titulo">Transformando momentos únicos em memórias eternas</h2>
+            <!-- <h2 class="inicio-titulo">Transformando momentos únicos em memórias eternas</h2> -->
         </div>
     </section>
+
+        <section id="sobre-mim" class="sobre-mim">
+        <div class="container">
+            <div class="sobre-mim-texto">
+                <h2 class="section-titulo">Sobre mim</h2>
+                <p class="section-subtitulo">Nascido em 19 de agosto de 1993, em Porto Velho, Rondônia, sou Rafael Oliveira, filmmaker com mais de 15 anos de atuação no audiovisual. Tenho experiência sólida em direção de fotografia, captação de imagem e construção de narrativas visuais. Minha trajetória começou com produções publicitárias e se expandiu com trabalhos na SigTV (afiliada da Record em São Paulo), além de documentários, curtas-metragens e projetos realizados no Brasil e no exterior. Também atuei durante anos na captação de vídeos de casamento, o que ajudou a refinar meu olhar para momentos espontâneos e sensíveis — habilidade que aplico até hoje em cada novo projeto.</p>
+                <br>
+                <p class="section-subtitulo">Minha missão como filmmaker é simples: contar boas histórias com alma, estética e verdade.</p>
+            </div>
+            <img src="images/foto-sobremim3.jpg" alt="">
+        </div>
+    </section>
+
+    <div class="section-divisao" id="section-divisao1"></div>
 
     <section id="portfolio" class="portfolio">
         <div class="container">
@@ -74,8 +90,6 @@
         </div>
     </section>
 
-    <div class="section-divisao" id="section-divisao1"></div>
-
     <div id="imageModal" class="modal">
         <span class="modal-close">&times;</span>
             <img class="modal-corpo" id="expandedImage" alt="Imagem expandida">
@@ -84,6 +98,8 @@
                     <button class="modal-next">&#10095;</button>
                 </div>
     </div>
+
+    <div class="section-divisao" id="section-divisao2"></div>
 
     <section id="servicos" class="servicos">
         <div class="container">
@@ -99,7 +115,7 @@
                         </svg>
                     </div>
                     <h3 class="servico-titulo">Retratos</h3>
-                    <p class="servico-descricao">Sessões fotográficas profissionais para retratos individuais, familiares e corporativos. Capturando a essência e personalidade de cada pessoa.</p>
+                    <p class="servico-descricao">Sessões fotográficas profissionais para retratos individuais, familiares e corporativos.</p>
                 </div>
 
                 <div class="servico-card">
@@ -109,7 +125,7 @@
                     </svg>
                     </div>
                     <h3 class="servico-titulo">Eventos</h3>
-                    <p class="servico-descricao">Cobertura completa de casamentos, festas, eventos corporativos e celebrações especiais. Eternizando cada momento importante.</p>
+                    <p class="servico-descricao">Cobertura completa de casamentos, festas, eventos corporativos e celebrações especiais.</p>
                 </div>
 
                 <div class="servico-card">
@@ -123,19 +139,18 @@
                         </svg>
                 </div>
                     <h3 class="servico-titulo">Comercial</h3>
-                    <p class="servico-descricao">Fotografia de produtos, publicidade e conteúdo para marcas. Imagens profissionais que destacam seu negócio e atraem clientes.</p>
+                    <p class="servico-descricao">Fotografia de produtos, publicidade e conteúdo para marcas.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="section-divisao" id="section-divisao2"></div>
+    <div class="section-divisao" id="section-divisao3"></div>
 
     <section id="contato" class="contato-section">
         <div class="container">
-            <h2 class="section-titulo">Entre em contato conosco</h2>
-            <p class="section-subtitulo"></p>
-            
+            <h2 class="section-titulo">Entre em contato</h2>
+            <p class="section-subtitulo">Entre em contato para orçamentos, parcerias ou qualquer dúvida relacionada aos meus serviços. Atendo em todo o Brasil e estou disponível para trabalhos em fotografia, filmagem e direção de fotografia.</p>
             <div class="contato-grid">
                 <div class="contato-item">
                     <svg class="contato-icone" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -143,7 +158,7 @@
                         <polyline points="22,6 12,13 2,6"></polyline>
                     </svg>
                     <div class="contato-texto">
-                        <p class="contato-info">NomeFotografoFotografia@gmail.com</p>
+                        <p class="contato-info">rafaelfilmmaker@gmail.com</p>
                     </div>
                 </div>
 
@@ -152,7 +167,7 @@
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                     </svg>
                     <div class="contato-texto">
-                        <p class="contato-info">+55 (69) 91234-5678</p>
+                        <p class="contato-info">(69) 9298-9857</p>
                     </div>
                 </div>
 
@@ -178,41 +193,27 @@
 
             <div class="footer-corpo">
                 <div class="social-links">
-
-                    <a href="https://facebook.com" target="_blank" class="social-link" aria-label="Facebook">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                    </a>
-
-                    <a href="https://wa.me/69912345678" target="_blank" class="social-link" aria-label="WhatsApp">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                        </svg>
-                    </a>
-
-                    <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+                    <a href="https://www.instagram.com/rafaelfilmmaker" target="_blank" class="social-link" aria-label="Instagram">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M10.825091,2 L13.1738932,2 C14.8491598,2.00379146 15.2338099,2.01854561 16.1226982,2.059103 C17.187141,2.10765278 17.9141174,2.27672349 18.5502266,2.52395815 C19.2078518,2.77948955 19.7655588,3.12144192 20.3215589,3.67740233 C20.8775194,4.23340244 21.2194717,4.79110953 21.4750428,5.44873467 C21.7222377,6.08484389 21.8913085,6.81182019 21.9398582,7.87626307 C21.9869049,8.90737346 21.9992305,9.25998097 22,11.7357029 L22,12.2632942 C21.9992305,14.7389803 21.9869049,15.0915878 21.9398582,16.1226982 C21.8913085,17.187141 21.7222377,17.9141174 21.4750428,18.5502266 C21.2194717,19.2078518 20.8775194,19.7655588 20.3215589,20.3215589 C19.7655588,20.8775194 19.2078518,21.2194717 18.5502266,21.4750428 C17.9141174,21.7222377 17.187141,21.8913085 16.1226982,21.9398582 C15.0915878,21.9869049 14.7389803,21.9992305 12.2632942,22 L11.7357029,22 C9.25998097,21.9992305 8.90737346,21.9869049 7.87626307,21.9398582 C6.81182019,21.8913085 6.08484389,21.7222377 5.44873467,21.4750428 C4.79110953,21.2194717 4.23340244,20.8775194 3.67740233,20.3215589 C3.12144192,19.7655588 2.77948955,19.2078518 2.52395815,18.5502266 C2.27672349,17.9141174 2.10765278,17.187141 2.059103,16.1226982 C2.01854561,15.2338099 2.00379146,14.8491598 2,13.1738932 L2,10.825091 C2.00379146,9.14980144 2.01854561,8.76515134 2.059103,7.87626307 C2.10765278,6.81182019 2.27672349,6.08484389 2.52395815,5.44873467 C2.77948955,4.79110953 3.12144192,4.23340244 3.67740233,3.67740233 C4.23340244,3.12144192 4.79110953,2.77948955 5.44873467,2.52395815 C6.08484389,2.27672349 6.81182019,2.10765278 7.87626307,2.059103 C8.76515134,2.01854561 9.14980144,2.00379146 10.825091,2 L13.1738932,2 L10.825091,2 Z M12.733046,3.80115495 L11.2659442,3.80115495 C9.25857953,3.80324073 8.90746344,3.81583469 7.95839674,3.85913648 C6.98335214,3.90359743 6.45383012,4.06651507 6.10143736,4.20347069 C5.63463704,4.38488726 5.30149746,4.60159471 4.95156594,4.95156594 C4.60159471,5.30149746 4.38488726,5.63463704 4.20347069,6.10143736 C4.06651507,6.45383012 3.90359743,6.98335214 3.85913648,7.95839674 C3.81583469,8.90746344 3.80324073,9.25857953 3.80115495,11.2659442 L3.80115495,12.733046 C3.80324073,14.7403818 3.81583469,15.0914978 3.85913648,16.0405646 C3.90359743,17.0156091 4.06651507,17.5451311 4.20347069,17.8975239 C4.38488726,18.3643242 4.60163441,18.6974638 4.95156594,19.0473953 C5.30149746,19.3973665 5.63463704,19.614074 6.10143736,19.7954906 C6.45383012,19.9324462 6.98335214,20.0953638 7.95839674,20.1398247 C9.0127962,20.1879378 9.32902474,20.1981401 11.9995005,20.1981401 C14.6699365,20.1981401 14.9862047,20.1879378 16.0405646,20.1398247 C17.0156091,20.0953638 17.5451311,19.9324462 17.8975239,19.7954906 C18.3643242,19.614074 18.6974638,19.3973665 19.0473953,19.0473953 C19.3973665,18.6974638 19.614074,18.3643242 19.7954906,17.8975239 C19.9324462,17.5451311 20.0953638,17.0156091 20.1398247,16.0405646 C20.1879378,14.986046 20.1981401,14.6697381 20.1981401,11.9995005 C20.1981401,9.32922322 20.1879378,9.0129153 20.1398247,7.95839674 C20.0953638,6.98335214 19.9324462,6.45383012 19.7954906,6.10143736 C19.614074,5.63463704 19.3973665,5.30149746 19.0473953,4.95156594 C18.6974638,4.60159471 18.3643242,4.38488726 17.8975239,4.20347069 C17.5451311,4.06651507 17.0156091,3.90359743 16.0405646,3.85913648 C15.0914978,3.81583469 14.7403818,3.80324073 12.733046,3.80115495 Z M11.9995,6.99920128 C14.7610764,6.99920128 16.99976,9.23788484 16.99976,11.9995 C16.99976,14.7610764 14.7610764,16.99976 11.9995,16.99976 C9.23788484,16.99976 6.99920128,14.7610764 6.99920128,11.9995 C6.99920128,9.23788484 9.23788484,6.99920128 11.9995,6.99920128 Z M11.9995,8.75368323 C10.2068679,8.75368323 8.75368323,10.2068679 8.75368323,11.9995 C8.75368323,13.7920934 10.2068679,15.245278 11.9995,15.245278 C13.7920934,15.245278 15.245278,13.7920934 15.245278,11.9995 C15.245278,10.2068679 13.7920934,8.75368323 11.9995,8.75368323 Z M17.4164293,5.33244149 C18.1068302,5.33244149 18.6665198,5.89213105 18.6665198,6.58253201 C18.6665198,7.27293296 18.1068302,7.83258117 17.4164293,7.83258117 C16.7260697,7.83258117 16.1663801,7.27293296 16.1663801,6.58253201 C16.1663801,5.89213105 16.7260697,5.33244149 17.4164293,5.33244149 Z"/>
                         </svg>
                     </a>
 
-                    <a href="https://pinterest.com" target="_blank" class="social-link" aria-label="Pinterest">
+                    <a href="https://wa.me/69992989857" target="_blank" class="social-link" aria-label="WhatsApp">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/>
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                         </svg>
                     </a>
-
                 </div>
             </div>
 
-            <!--
-            <div class="footer-bottom">
+      <!--      
+        <div class="footer-bottom">
                 <p>&copy; 2025. Todos os direitos reservados.</p>
             </div>
         </div>
-            -->
-        
+    -->
+    
     </footer>
 
     <script src="script.js"></script>
