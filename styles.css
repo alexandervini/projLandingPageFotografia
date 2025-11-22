@@ -526,43 +526,6 @@ body
 }
 */
 
-.section-divisao 
-{
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
-}
-
-.section-divisao::before 
-{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#section-divisao1 
-{
-  background-image: url('images/farolcinza.jpg');
-}
-
-
-#section-divisao2 
-{
-  background-image: url('images/cactocinza.jpg');
-}
-
-#section-divisao3 
-{
-  background-image: url('images/deserto.jpg');
-}
-
 @media (max-width: 768px) 
 {
   .logo 
@@ -638,14 +601,65 @@ body
     padding: 0 1rem;
   }
 
+  .header-corpo 
+  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  }
+
+  .nav 
+  {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  }
+
   .portfolio-grid 
   {
     grid-template-columns: 1fr;
   }
 
-  .inicio-title 
+  .inicio-titulo 
   {
     font-size: 1.75rem;
   }
 }
 
+.section-divisao 
+{
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.section-divisao::before 
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#section-divisao1 
+{
+  background-image: url('images/farolcinza.jpg');
+}
+
+
+#section-divisao2 
+{
+  background-image: url('images/cactocinza.jpg');
+}
+
+#section-divisao3 
+{
+  background-image: url('images/deserto.jpg');
+}
