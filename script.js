@@ -73,7 +73,7 @@ document.addEventListener("keydown", (e) => {
   }
 })
 
-// Scroll suave quando clica no tópico do header
+// Scroll quando clica no tópico do header
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -90,3 +90,24 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   })
 })
+
+// Funcionalidade - Menu mobile
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+        menuToggle.classList.toggle('active');
+    });
+
+    // Fechar o menu ao clicar em um link
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            if (nav.classList.contains('open')) {
+                nav.classList.remove('open');
+                menuToggle.classList.remove('active');
+            }
+        });
+    });
+}
