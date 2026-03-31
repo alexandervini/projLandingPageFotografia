@@ -91,6 +91,27 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
+// Parallax manual para mobile (fix background-attachment: fixed)
+const inicio = document.querySelector('.inicio');
+
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
+function updateParallax() {
+  if (!isMobile()) return;
+  const scrollY = window.pageYOffset;
+  const speed = 0.4;
+  inicio.style.backgroundPosition = `center ${scrollY * speed}px`;
+}
+
+window.addEventListener('scroll', updateParallax, { passive: true });
+window.addEventListener('resize', () => {
+  if (!isMobile()) {
+    inicio.style.backgroundPosition = 'center';
+  }
+});
+
 // Funcionalidade - Menu mobile
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
